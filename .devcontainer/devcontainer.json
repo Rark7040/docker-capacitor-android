@@ -1,0 +1,27 @@
+{
+    "dockerComposeFile": "compose.yml",
+    "service": "workspace",
+    "workspaceFolder": "/workspace",
+    "remoteUser": "root",
+    "features": {
+        "docker-in-docker": {
+            "version": "latest",
+            "moby": true,
+            "dockerDashComposeVersion": "v3"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bradlc.vscode-tailwindcss",
+                "dsznajder.es7-react-js-snippets",
+                "ms-vscode.vscode-typescript-next",
+                "ms-azuretools.vscode-docker",
+                "EditorConfig.EditorConfig",
+                "ms-vscode.makefile-tools",
+                "ms-vsliveshare.vsliveshare",
+                "ritwickdey.LiveServer"
+            ]
+        }
+    }
+}
