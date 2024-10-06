@@ -1,0 +1,11 @@
+services:
+  android:
+    build: .
+    volumes:
+      - "${WORK_DIR}/app:/workspace"
+    working_dir: "/workspace"
+    tty: true
+    environment:
+      - ADB_INSTALL_TIMEOUT=100000
+    extra_hosts:
+      - host.docker.internal:host-gateway
