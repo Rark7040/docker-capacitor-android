@@ -1,8 +1,12 @@
 #!/bin/bash
 
 CURRENT_DIR=$(pwd)
-WORK_DIR=$(dirname "$CURRENT_DIR")
+echo "WORK_DIR=$CURRENT_DIR" > .env
 
-echo "WORK_DIR=$WORK_DIR" > .env
+echo ".envファイルに現在のディレクトリを書き込みました: $CURRENT_DIR"
 
-echo ".envファイルにPARENT_DIRを書き込みました: $WORK_DIR"
+echo "androidビルドコンテナのビルドを開始します..."
+
+docker build -t robingenz/ionic-capacitor github.com/robingenz/docker-ionic-capacitor
+
+echo "ビルド完了しました"

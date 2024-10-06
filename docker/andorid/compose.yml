@@ -2,7 +2,7 @@ services:
   android:
     build: .
     volumes:
-      - "${WORK_DIR}/capacitor-test/app:/workspace"
+      - "${WORK_DIR}/app:/workspace"
     working_dir: "/workspace"
     tty: true
     environment:

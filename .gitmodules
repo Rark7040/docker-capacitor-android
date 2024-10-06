@@ -1,3 +1,0 @@
-[submodule "docker/andorid/docker-ionic-capacitor"]
-	path = docker/andorid/docker-ionic-capacitor
-	url = https://github.com/robingenz/docker-ionic-capacitor.git
