@@ -1,14 +1,11 @@
 {
+    "name": "DockerCapacitor",
     "dockerComposeFile": "compose.yml",
     "service": "workspace",
     "workspaceFolder": "/workspace",
     "remoteUser": "root",
     "features": {
-        "docker-in-docker": {
-            "version": "latest",
-            "moby": true,
-            "dockerDashComposeVersion": "v3"
-        }
+        "ghcr.io/devcontainers/features/docker-outside-of-docker": {}
     },
     "customizations": {
         "vscode": {
